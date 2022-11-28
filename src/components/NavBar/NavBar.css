@@ -1,0 +1,14 @@
+a.navbar-brand {
+    font-size: xx-large;
+}
+
+
+@media screen and (max-width : 700px) {
+    nav.navbar.navbar-dark.bg-primary {
+        height: 30px;
+    } 
+    a.navbar-brand {
+    font-size :medium;
+    position: fixed;
+}
+}

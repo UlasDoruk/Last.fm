@@ -1,0 +1,21 @@
+nav.navbar.navbar-dark.bg-dark {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
+
+svg.bi.bi-github {
+    margin-right: 10px;
+}
+
+span {
+    color: white;
+}
+
+@media screen and (max-width : 700px) {
+    nav.navbar.navbar-dark.bg-dark {
+    height: 50px;
+    }
+}
