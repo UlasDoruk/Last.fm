@@ -1,3 +1,7 @@
-.App {
-  text-align: center;
+.Light{
+  background-color: white;
+}
+
+.Dark{
+  background: black;
 }

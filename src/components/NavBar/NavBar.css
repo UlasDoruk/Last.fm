@@ -1,5 +1,22 @@
 a.navbar-brand {
     font-size: xx-large;
+    font-family: fantasy;
+}
+
+button.btn.btn-dark.theme {
+    position: absolute;
+    right: 50px;
+    height: 30px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+button.btn.btn-light.theme {
+    position: absolute;
+    right: 50px;
+    height: 30px;
+    width: 40px;
+    border-radius: 20px;
 }
 
 
@@ -10,5 +27,19 @@ a.navbar-brand {
     a.navbar-brand {
     font-size :medium;
     position: fixed;
-}
+    }
+    button.btn.btn-dark.theme{
+        width: 20px;
+        height: 10px;
+        border-radius: 20px;
+        right: 20px;
+    }
+
+    button.btn.btn-light.theme{
+        width: 20px;
+        height: 10px;
+        border-radius: 20px;
+        right: 20px;
+    }
+
 }

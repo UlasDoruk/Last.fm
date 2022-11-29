@@ -1,0 +1,7 @@
+p.topArtistList {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-family: cursive;
+    margin: 10px;
+}
