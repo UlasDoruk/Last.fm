@@ -7,7 +7,7 @@ function NavBar() {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
-    <nav className="navbar navbar-dark bg-primary">
+    <nav className="navbar navbar-dark bg-secondary">
       <div className="container-fluid">
         <a href="HomePage.js" className="navbar-brand">
           Last.FM

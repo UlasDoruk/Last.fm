@@ -4,4 +4,67 @@ p.topArtistList {
     font-size: larger;
     font-family: cursive;
     margin: 10px;
+    color: tomato;
 }
+
+.card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+}
+.imgTitle {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+}
+
+h5.card-title {
+    margin: 10px;
+}
+
+.artistText {
+    display: grid;
+    margin-left: 80px;
+    position: absolute;
+    right: 15%;
+}
+
+p.card-text {
+    display: flex;
+    text-align: center;
+}
+
+@media screen and (max-width : 800px){
+    .imgTitle {
+    width: 100px;
+    flex-wrap: wrap;
+    }
+
+    a {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    h5.card-title {
+    font-size: small;
+    }
+
+    .artistText {
+    display: grid;
+    margin-left: 80px;
+    font-size: smaller;
+    position: absolute;
+    right: 5%;
+    }
+
+    img {
+    width: 100px;
+}}

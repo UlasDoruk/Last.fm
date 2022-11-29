@@ -21,7 +21,7 @@ button.btn.btn-light.theme {
 
 
 @media screen and (max-width : 700px) {
-    nav.navbar.navbar-dark.bg-primary {
+    nav.navbar.navbar-dark.bg-secondary {
         height: 30px;
     } 
     a.navbar-brand {

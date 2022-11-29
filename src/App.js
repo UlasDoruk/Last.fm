@@ -6,7 +6,7 @@ import {Theme} from "./components/Theme/Theme"
 function App() {
 
   return (
-    <div className='Light'>
+    <div >
       <Theme>
         <HomePage />
       </Theme>
