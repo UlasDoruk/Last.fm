@@ -1,0 +1,30 @@
+.row {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.btnHome {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.col-5.topAlbums {
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.col-5.topTracks {
+    border: solid 1px black;
+    border-radius: 5px;
+}

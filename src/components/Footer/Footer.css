@@ -5,6 +5,10 @@ nav.navbar.navbar-dark.bg-dark {
     bottom: 0;
 }
 
+.links{
+    display: flex;
+}
+
 svg.bi.bi-github {
     margin-right: 10px;
 }

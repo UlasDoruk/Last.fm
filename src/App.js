@@ -1,14 +1,19 @@
 import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { Theme } from "./components/Theme/Theme";
+import Artist from './components/Artist/Artist';
 import HomePage from './components/HomePage/HomePage';
-import {Theme} from "./components/Theme/Theme"
 
 
 function App() {
 
   return (
-    <div >
+    <div>
       <Theme>
-        <HomePage />
+        <Routes>
+          <Route path="/Artist" element={<Artist />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
+        </Routes>
       </Theme>
     </div>
   );
