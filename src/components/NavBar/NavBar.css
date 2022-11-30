@@ -3,9 +3,13 @@ a.navbar-brand {
     font-family: fantasy;
 }
 
+nav.navbar.top {
+    background: linear-gradient(135deg, #32536f 0%,#68797a 100%);
+}
+
 button.btn.btn-dark.theme {
     position: absolute;
-    right: 50px;
+    right: 30px;
     height: 30px;
     width: 40px;
     border-radius: 20px;
@@ -13,26 +17,32 @@ button.btn.btn-dark.theme {
 
 button.btn.btn-light.theme {
     position: absolute;
-    right: 50px;
+    right: 30px;
     height: 30px;
     width: 40px;
     border-radius: 20px;
 }
 
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 @media screen and (max-width : 700px) {
-    nav.navbar.navbar-dark.bg-secondary {
+    nav.navbar.top {
         height: 30px;
     } 
     a.navbar-brand {
     font-size :medium;
-    position: fixed;
+    position: absolute;
     }
     button.btn.btn-dark.theme{
         width: 20px;
         height: 10px;
         border-radius: 20px;
         right: 20px;
+        position: absolute;
     }
 
     button.btn.btn-light.theme{
@@ -40,6 +50,7 @@ button.btn.btn-light.theme {
         height: 10px;
         border-radius: 20px;
         right: 20px;
+        position: absolute;
     }
 
 }

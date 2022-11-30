@@ -48,7 +48,7 @@ function Cards() {
                         to="/Artist"
                         style={{ color: "inherit", textDecoration: "none" }}
                       >
-                        <img
+                        <img className="mainimg"
                           src="https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
                           onClick={() => showArtist(item.name)}
                         ></img>

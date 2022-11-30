@@ -3,13 +3,13 @@
     justify-content: space-around;
 }
 
-a {
+a.btnHome {
     width: 25%;
 }
 
 hr {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .container.top {
@@ -29,6 +29,7 @@ h1.albumsTitle {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: #55819e;
 }
 
 h1.tracksTitle {
@@ -36,6 +37,7 @@ h1.tracksTitle {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: #55819e;
 }
 
 .card.Top {
@@ -43,6 +45,10 @@ h1.tracksTitle {
     justify-content: center;
     width: 75%;
     margin-top: 20px;
+    background: linear-gradient(135deg, #c3ec52 0%,#0ba29d 100%);
+    border: solid;
+    border-radius: 20px ;
+
 }
 
 .btnHome {
@@ -52,6 +58,8 @@ h1.tracksTitle {
     border: 3px solid white;
     background-color: cornflowerblue;
     color: aliceblue;
+    background:linear-gradient(135deg, #5b247a 0%,#1bcedf 100%);
+    font-size: larger;
 }
 
 .col-5.topAlbums {
@@ -69,30 +77,42 @@ h1.tracksTitle {
 img.card-img-top {
     width: 120px;
     margin: 20px;
+    border-radius: 15px;
 }
 
 .card-body.Title {
     display: flex;
     position: absolute;
     left: 42%;
+    border-radius: 15px;
+    margin: 35px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    background: linear-gradient(135deg, #68797a 0%,#083667 100%);
+    color: white;
 }
 
 img.card-img-topTracks {
     width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
 img.card-img-topAlbums {
     width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
 .card-body.topAlbums {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    border-radius: 5px;
 }
 
 .card-body.topTracks {
     justify-content: space-around;
+    border-radius: 5px;
 }
 
 .textAlbums {
@@ -104,13 +124,12 @@ img.card-img-topAlbums {
     font-size: x-small;
 }
 
-@media screen and(max-width:800px) {
+@media screen and (max-width:800px) {
     h1.card-title {
-    font-size: medium;
-    margin-left: 20px;
+    font-size: smaller;
     }
     img.card-img-top {
-    width: 120px;
+    width: 100px;
     }
     hr {
     margin-left: 20px;
@@ -136,7 +155,33 @@ img.card-img-topAlbums {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: medium;
-}
-
+    }
+    .textAlbums {
+    font-size: xx-small;
+    text-align: center;
+    }
+    h5.card-title {
+    font-size: xx-small;
+    text-align: center;
+    padding: 5px;
+    }
+    .card-body.topAlbums {
+    margin: 0px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    }
+    .trackstext {
+    font-size: xx-small;
+    text-align: center;
+    }
+    .card-body.topTracks {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    }
 
 }

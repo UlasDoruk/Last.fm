@@ -2,11 +2,13 @@ import "../Artist/Artist.css";
 import { NavLink } from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
 import ArtistContext from "../../Context/ArtistContext";
+import ThemeContext from "../Theme/Theme";
 
 function Artist() {
   const [topAlbum, setTopAlbum] = useState([]);
   const [topTracks, setTopTracks] = useState([]);
   const {artistName} = useContext(ArtistContext)
+  const {theme,setTheme} = useContext(ThemeContext)
   const topAlbumURL = `http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${artistName}&api_key=537ca37ec8bb9458ec681e602244c5fe&format=json`;
   const topTracksURL =`http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${artistName}&api_key=537ca37ec8bb9458ec681e602244c5fe&format=json`;
 
@@ -87,7 +89,11 @@ function Artist() {
   return (
     <>
       <div className="container top">
-        <NavLink to={"/"} style={{textDecoration:"none"}}>
+        <NavLink
+          className="btnhome"
+          to={"/"}
+          style={{ textDecoration: "none" }}
+        >
           <button className="btnHome">HOME</button>
         </NavLink>
         <div className="card Top">
@@ -102,6 +108,10 @@ function Artist() {
         </div>
       </div>
       <hr></hr>
+      <button
+        onClick={() => setTheme(theme === "Light" ? "Dark" : "Light")}
+        className={`btn btn-${theme === "Light" ? "dark" : "light"} theme`}
+      ></button>
       <div className="container body">
         <div className="row">
           <div className="col-5 topAlbums">

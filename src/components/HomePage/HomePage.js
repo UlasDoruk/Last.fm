@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <div>
       <NavBar />
-      <Cards/>
+      <Cards />
       <Footer />
     </div>
   );
