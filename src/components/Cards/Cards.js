@@ -14,10 +14,13 @@ function Cards() {
 
   const loadData = async () => {
     let response = await fetch(`${url}&page=${page}`);
+    if(!response.ok){
+      throw Error("Could not fetch the data for that resource ")
+    }
     let data = await response.json();
     setData((prev) => [...prev, ...data.artists.artist]);
     setLoading(false);
-  };
+    }
 
   const handleScroll = () => {
     if (window.innerHeight + document.documentElement.scrollTop + 1 >= document.documentElement.scrollHeight
@@ -28,7 +31,9 @@ function Cards() {
   };
 
   useEffect(() => {
-    loadData();
+    loadData().catch(err=>{
+      console.log(err.message)
+    });
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [page]);
