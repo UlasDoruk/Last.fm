@@ -3,7 +3,45 @@
     justify-content: space-around;
 }
 
-.card {
+a {
+    width: 25%;
+}
+
+hr {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+h5.card-title {
+    margin: 10px;
+    font-size: medium;
+    display: flex;
+    align-self: center;
+}
+
+h1.albumsTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1.tracksTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card.Top {
+    display: flex;
+    justify-content: center;
+    width: 75%;
     margin-top: 20px;
 }
 
@@ -14,17 +52,91 @@
     border: 3px solid white;
     background-color: cornflowerblue;
     color: aliceblue;
-    position: absolute;
-    left: 10px;
-    top: 10px;
 }
 
 .col-5.topAlbums {
-    border: solid 1px black;
+    border: solid 3px black;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .col-5.topTracks {
-    border: solid 1px black;
+    border: solid 3px black;
     border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+img.card-img-top {
+    width: 120px;
+    margin: 20px;
+}
+
+.card-body.Title {
+    display: flex;
+    position: absolute;
+    left: 42%;
+}
+
+img.card-img-topTracks {
+    width: 100%;
+}
+
+img.card-img-topAlbums {
+    width: 100%;
+}
+
+.card-body.topAlbums {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.card-body.topTracks {
+    justify-content: space-around;
+}
+
+.textAlbums {
+    font-size: smaller;
+    margin-top: 8px;
+}
+.trackstext {
+    margin-bottom: -20px;
+    font-size: x-small;
+}
+
+@media screen and(max-width:800px) {
+    h1.card-title {
+    font-size: medium;
+    margin-left: 20px;
+    }
+    img.card-img-top {
+    width: 120px;
+    }
+    hr {
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    }
+    h1.albumsTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: medium;
+    }   
+    h1.tracksTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+
 }
