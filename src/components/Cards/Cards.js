@@ -6,7 +6,7 @@ import "../Cards/Cards.css";
 function Cards() {
   // Apı'dan çekeceğiniz verileri data  değişkeninde saklıyoruz.
   const [data, setData] = useState([]);
-  // Sayfada infinite scroll kullanıldğından yüklenirken loading kısmı burada saklanıyor.
+  // Sayfada infinite scroll kullanıldğından, yüklenirken loading kısmı burada saklanıyor.
   const [loading, setLoading] = useState(true);
   // Infinite scroll için initial değeri burada 1 olarak geçiyoruz. Kullanıcı scroll yapmaya başladıkça page değeri teker teker artacak.
   const [page, setPage] = useState(1);

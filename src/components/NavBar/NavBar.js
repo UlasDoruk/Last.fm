@@ -3,7 +3,7 @@ import ThemeContext from "../Theme/Theme";
 import "../NavBar/NavBar.css"
 
 function NavBar() {
-  // Theme contextinde ki theme değerinin bir kopyası burada.
+  
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
