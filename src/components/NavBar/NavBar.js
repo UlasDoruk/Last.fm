@@ -3,7 +3,7 @@ import ThemeContext from "../Theme/Theme";
 import "../NavBar/NavBar.css"
 
 function NavBar() {
-
+  // Theme contextinde ki theme değerinin bir kopyası burada.
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
@@ -12,6 +12,8 @@ function NavBar() {
         <a href="#" className="navbar-brand">
           Last.FM
         </a>
+        {/* Sayfada ki butona tıkladığında tema ve className'i değiştiren bir onClick fonksiyonu buluyor. */}
+        {/* Burada ki className'in değişmesinin sebebi butonun arka planının da eş zamanlı değişmesi için. */}
         <button id="themebtn"
           onClick={() => setTheme(theme === "Light" ? "Dark" : "Light")} className= {`btn btn-${theme === "Light" ? "dark" : "light"} theme`}
         ></button>
@@ -19,5 +21,5 @@ function NavBar() {
     </nav>
   );
 }
-
+// React.memo gereksiz render işleminin önüne geçmiş oluyoruz.
 export default React.memo(NavBar)

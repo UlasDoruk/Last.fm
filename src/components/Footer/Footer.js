@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Footer/Footer.css"
 
+// Bu component'de klasik bir footer yer almakta. Anchor'un içinde bulunan svg tagleri Bootstrap iconlarını barındırıyor. 
 function Footer() {
   return (
     <nav className="navbar navbar-dark bg-dark">
@@ -40,5 +41,5 @@ function Footer() {
     </nav>
   );
 }
-
+// React.memo ile gereksiz render işleminin önüne geçmiş bulunuyoruz. 
 export default React.memo(Footer)
