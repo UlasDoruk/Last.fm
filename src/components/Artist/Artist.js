@@ -14,19 +14,29 @@ function Artist() {
 
   const loadTopAlbum = async () => {
     let response = await fetch(topAlbumURL);
+    if (!response.ok) {
+      throw Error("Could not fetch the data for that resource ");
+    }
     let topAlbum = await response.json();
     setTopAlbum(topAlbum.topalbums.album.slice(0,10));
   };
 
   const loadTopTracks = async () => {
     let response = await fetch(topTracksURL);
+    if (!response.ok) {
+      throw Error("Could not fetch the data for that resource ");
+    }
     let topTracks = await response.json();
     setTopTracks(topTracks.toptracks.track.slice(0, 10));
   };
 
   useEffect(() => {
-    loadTopAlbum();
-    loadTopTracks();
+    loadTopAlbum().catch(err=>{
+      console.log(err.message)
+    });
+    loadTopTracks().catch((err) => {
+      console.log(err.message);
+    });
   }, []);
 
   const renderTopTracks=()=>{

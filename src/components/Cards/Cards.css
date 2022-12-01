@@ -50,6 +50,7 @@ h5.card-title {
 p.card-text {
     display: flex;
     text-align: center;
+    font-weight: bold;
 }
 
 h1.loading {
