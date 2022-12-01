@@ -5,9 +5,9 @@ import "../Cards/Cards.css";
 
 function Cards() {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const { showArtist } = useContext(ArtistContext);
-  const [loading,setLoading] = useState(true)
   const url = `https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=537ca37ec8bb9458ec681e602244c5fe&format=json`;
 
   

@@ -16,6 +16,7 @@ function Footer() {
               width="20"
               height="20"
               fill="gold"
+              id='github'
               className="bi bi-github"
               viewBox="0 0 16 16"
             >

@@ -12,7 +12,7 @@ function NavBar() {
         <a href="#" className="navbar-brand">
           Last.FM
         </a>
-        <button
+        <button id="themebtn"
           onClick={() => setTheme(theme === "Light" ? "Dark" : "Light")} className= {`btn btn-${theme === "Light" ? "dark" : "light"} theme`}
         ></button>
       </div>
