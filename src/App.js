@@ -1,11 +1,12 @@
 import './App.css';
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Theme } from "./components/Theme/Theme";
 import { ShowArtist } from "./Context/ArtistContext";
 import Artist from './components/Artist/Artist';
-import HomePage from './components/HomePage/HomePage';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 
+const HomePage = React.lazy(() => import("./components/HomePage/HomePage"));
 
 function App() {
 

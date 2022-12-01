@@ -1,6 +1,6 @@
 import "../Artist/Artist.css";
 import { NavLink } from "react-router-dom";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import ArtistContext from "../../Context/ArtistContext";
 import ThemeContext from "../Theme/Theme";
 
@@ -39,7 +39,7 @@ function Artist() {
     });
   }, []);
 
-  const renderTopTracks=()=>{
+  const renderTopTracks = useCallback(()=>{
     return(
         <React.Fragment>
             {topTracks.map((item,index)=>{
@@ -66,9 +66,9 @@ function Artist() {
             })}
         </React.Fragment>
     )
-  }
+  },[topTracks])
 
-  const renderTopAlbums = () => {
+  const renderTopAlbums = useCallback(() => {
     return (
       <React.Fragment>
         {topAlbum.map((item, index) => {
@@ -94,7 +94,7 @@ function Artist() {
         })}
       </React.Fragment>
     );
-  };
+  },[topAlbum]);
 
   return (
     <>

@@ -1,4 +1,4 @@
-import  {useContext} from "react"
+import  React,{useContext} from "react"
 import ThemeContext from "../Theme/Theme";
 import "../NavBar/NavBar.css"
 
@@ -20,4 +20,4 @@ function NavBar() {
   );
 }
 
-export default NavBar
+export default React.memo(NavBar)

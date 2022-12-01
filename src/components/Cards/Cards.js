@@ -35,7 +35,6 @@ function Cards() {
       console.log(err.message)
     });
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
   }, [page]);
 
   return (
