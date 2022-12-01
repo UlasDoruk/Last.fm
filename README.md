@@ -1,7 +1,7 @@
 
 # Last.fm porject
 
- [Here is the Link!!!](https://lastfm-udk.netlify.app/).
+ [Here is the Link!!!](https://lastfm-udk.netlify.app/)
 ### `npm start`
 
 Runs the app in the development mode.\
