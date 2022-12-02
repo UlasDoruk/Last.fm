@@ -1,5 +1,5 @@
 
-# Last.fm porject
+# Last.fm project
 
  [Here is the Link!!!](https://lastfm-udk.netlify.app/)
 ### `npm start`
